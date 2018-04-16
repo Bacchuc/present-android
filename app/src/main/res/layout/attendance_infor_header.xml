@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_attendance_sick_leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:text="@string/absence"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_attendance_absence"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/tv_attendance_sick_leave"
+        android:src="@drawable/ic_fork_48" />
+
+
+    <TextView
+        android:id="@+id/tv_attendance_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_attendance_absence"
+        android:padding="5dp"
+        android:text="@string/sign"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/tv_attendance_sign"
+        android:src="@drawable/ic_check_48" />
+
+    <ImageView
+        android:id="@+id/iv_attendance_sick_leave"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/tv_attendance_sick_leave"
+        android:src="@drawable/ic_circle_48" />
+
+    <TextView
+        android:id="@+id/tv_attendance_sick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_toRightOf="@id/iv_attendance_sick_leave"
+        android:padding="5dp"
+        android:text="@string/sick_leave"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

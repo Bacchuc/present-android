@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="?attr/colorPrimary">
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/bg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--/>-->
+
+    <TextView
+        android:id="@+id/tv_icome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="我  到"
+        android:textColor="@color/window_background"
+        android:textSize="58sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_check_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:text="正在检查更新"
+        android:textColor="@color/window_background"
+        android:textSize="20sp"
+        />
+</FrameLayout>

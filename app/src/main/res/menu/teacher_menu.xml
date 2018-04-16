@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/id_menu_teacher_add_course"
+        android:icon="@drawable/ic_check_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/add_course"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/id_menu_teacher_setting"
+        android:icon="@drawable/ic_check_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/setting"
+        app:showAsAction="collapseActionView" />
+
+</menu>

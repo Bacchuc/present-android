@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:Android="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:state_pressed="true"
+        android:drawable="@drawable/start_sign_btn_shape"/>
+
+    <item android:state_pressed="false"
+        android:drawable="@drawable/start_sign_btn_shape"/>
+</selector>

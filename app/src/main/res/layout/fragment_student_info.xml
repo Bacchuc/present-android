@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_student_info"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        android:theme="@style/ActionMenuWhiteTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/class_name"
+                android:textSize="@dimen/student_info_name"
+                android:layout_marginLeft="@dimen/student_info_margin_left"
+                android:layout_marginTop="@dimen/student_info_margin_top"
+                android:layout_below="@+id/textView22"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="@dimen/student_info_name"
+                android:layout_marginLeft="@dimen/student_info_margin_left"
+                android:layout_marginTop="@dimen/student_info_margin_top"
+                android:layout_below="@+id/iv_student_portrait"
+                />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sexual"
+                android:textSize="@dimen/student_info_name"
+                android:layout_marginLeft="@dimen/student_info_margin_left"
+                android:layout_marginTop="@dimen/student_info_margin_top"
+                android:layout_below="@+id/textView9"
+                />
+
+            <CheckBox
+                android:id="@+id/cb_student_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView21"
+                android:layout_marginLeft="@dimen/student_info_margin_right"
+                android:layout_alignBaseline="@+id/textView21"
+                android:text="@string/male" />
+
+            <CheckBox
+                android:id="@+id/cb_student_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cb_student_male"
+                android:layout_marginLeft="@dimen/student_info_margin_right"
+                android:layout_alignBaseline="@+id/textView21"
+                android:text="@string/female"/>
+
+            <ImageView
+                android:id="@+id/iv_student_portrait"
+                android:layout_width="83dp"
+                android:layout_height="77dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/ic_launcher_round" />
+            <!--app:layout_constraintBottom_toTopOf="@+id/guideline13"-->
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/student_info_name"
+                android:layout_marginLeft="@dimen/student_info_margin_left"
+                android:layout_marginTop="@dimen/student_info_margin_top"
+                android:text="@string/student_nubmer"
+                android:layout_below="@+id/textView21"/>
+
+            <EditText
+                android:id="@+id/et_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView9"
+                android:layout_marginLeft="@dimen/student_info_margin_right"
+                android:layout_alignBaseline="@+id/textView9"
+                android:ems="10"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/et_student_student_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView22"
+                android:layout_marginLeft="@dimen/student_info_margin_right"
+                android:layout_alignBaseline="@+id/textView22"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/et_student_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView23"
+                android:layout_marginLeft="@dimen/student_info_margin_right"
+                android:layout_alignBaseline="@+id/textView23"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/school_name"
+                android:textSize="@dimen/student_info_name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/student_info_margin_top"
+                android:layout_below="@+id/textView23"/>
+
+            <EditText
+                android:id="@+id/et_student_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView24"
+                android:layout_marginLeft="@dimen/student_info_margin_right"
+                android:layout_alignBaseline="@+id/textView24"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/class_position"
+                android:textSize="@dimen/student_info_name"
+                android:layout_marginLeft="@dimen/student_info_margin_left"
+                android:layout_marginTop="@dimen/student_info_margin_top"
+                android:layout_below="@+id/textView24"/>
+
+            <EditText
+                android:id="@+id/et_student_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView25"
+                android:layout_marginLeft="@dimen/student_info_margin_right"
+                android:layout_alignBaseline="@+id/textView25"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mail"
+                android:textSize="@dimen/student_info_name"
+                android:layout_marginLeft="@dimen/student_info_margin_left"
+                android:layout_marginTop="@dimen/student_info_margin_top"
+                android:layout_below="@+id/textView25"/>
+
+            <EditText
+                android:id="@+id/et_student_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView26"
+                android:layout_marginLeft="@dimen/student_info_margin_right"
+                android:layout_alignBaseline="@+id/textView26"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:textSize="@dimen/student_info_name"
+                android:layout_marginLeft="@dimen/student_info_margin_left"
+                android:layout_marginTop="@dimen/student_info_margin_top"
+                android:layout_below="@+id/textView26" />
+
+            <EditText
+                android:id="@+id/et_student_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView27"
+                android:layout_marginLeft="@dimen/student_info_margin_right"
+                android:layout_alignBaseline="@+id/textView27"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+
+
+
+
+        </RelativeLayout>
+
+        <!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--xmlns:tools="http://schemas.android.com/tools"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+            <!--<android.support.constraint.Guideline-->
+                <!--android:id="@+id/guideline13"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--app:layout_constraintGuide_begin="349dp" />-->
+
+            <!---->
+        <!--</android.support.constraint.ConstraintLayout>-->
+
+    </ScrollView>
+
+</LinearLayout>
